@@ -1,7 +1,17 @@
+/* Colors vars */
+body {
+  --bg-color: white;
+}
+
+body.theme-dark {
+  --bg-color: black;
+}
+
+/* Start page style */
 body {
   margin: 0;
   padding: 0;
-  background: white;
+  background: var(--bg-color);
 }
 
 .Switch {

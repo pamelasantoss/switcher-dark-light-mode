@@ -4,8 +4,9 @@ const switcher = {
   },
   changeTheme: function() {
     const switcherButton = $('#switch-toggle-btn')
+
     switcherButton.on('click', function() {
-      console.log($(this).is(":checked"))
+      $('body').toggleClass('theme-dark')
     })
   }
 }
