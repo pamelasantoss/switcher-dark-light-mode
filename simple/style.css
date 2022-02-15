@@ -26,17 +26,24 @@ body {
 }
 
 .SwitchToggle + label {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   position: relative;
   cursor: pointer;
   outline: none;
   user-select: none;
   padding: 2px;
   width: 50px;
-  height: 20px;
+  height: 22px;
   box-sizing: border-box;
-  background-color: #dddddd;
   border-radius: 40px;
+}
+
+.SwitchToggle + label span {
+  position: relative;
+  font-size: 18px;
+  margin: 0 1px;
+  color: white;
 }
 
 .SwitchToggle + label:before,
@@ -52,13 +59,17 @@ body {
 /* Button off */
 .SwitchToggle + label:before {
   right: 1px;
-  background-color: #f1f1f1;
+  background-color: #1634a1;
   border-radius: 40px;
   transition: background 0.4s;
 }
 
 .SwitchToggle + label:after {
-  width: 20px;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  top: -1px;
   background-color: #fff;
   border-radius: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -67,10 +78,14 @@ body {
 
 /* Button on */
 .SwitchToggle:checked + label:before {
-  background-color: #8ce196;
+  background-color: #ffc135;
+}
+
+.SwitchToggle:checked + label span {
+  color: black;
 }
 
 .SwitchToggle:checked + label:after {
-  margin-left: 28px;
+  margin-left: 24px;
 }
 /* End | Button */
