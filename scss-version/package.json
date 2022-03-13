@@ -1,0 +1,58 @@
+{
+  "name": "scss-version",
+  "version": "1.0.0",
+  "description": "Compile the css of the switcher component",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pamelasantoss/switcher-dark-light-mode.git"
+  },
+  "keywords": [
+    "switcher",
+    "css",
+    "scss"
+  ],
+  "author": "Pamela Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pamelasantoss/switcher-dark-light-mode/issues"
+  },
+  "homepage": "https://github.com/pamelasantoss/switcher-dark-light-mode#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/preset-env": "^7.8.7",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-root-import": "^5.1.0",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.7",
+    "core-js": "^3.6.5",
+    "del": "^2.0.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "latest",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.8",
+    "run-sequence": "^2.2.1"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "dependencies": {
+    "gulp-rename": "^2.0.0",
+    "gulp-watch": "^5.0.1",
+    "node-gyp": "^6.1.0",
+    "node-sass": "^4.13.1"
+  }
+}
