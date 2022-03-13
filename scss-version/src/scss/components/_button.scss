@@ -1,0 +1,73 @@
+.SwitchToggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+
+  + label {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    padding: 2px;
+    width: 50px;
+    height: 22px;
+    box-sizing: border-box;
+    border-radius: 40px;
+
+    span {
+      position: relative;
+      font-size: 18px;
+      margin: 0 1px;
+      color: white;
+    }
+
+    &:before,
+    &:after {
+      display: block;
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      bottom: 1px;
+      content: "";
+    }
+
+    // Button off
+    &:before {
+      right: 1px;
+      background-color: #1634a1;
+      border-radius: 40px;
+      transition: background 0.4s;
+    }
+
+    &:after {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      left: 0;
+      top: -1px;
+      background-color: white;
+      border-radius: 100%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      transition: margin 0.4s;
+    }
+  }
+
+  // Button on
+  &:checked {
+    + label {
+      &:before {
+        background-color: #ffc135;
+      }
+
+      &:after {
+        margin-left: 24px;
+      }
+
+      span {
+        color: black;
+      }
+    }
+  }
+}
