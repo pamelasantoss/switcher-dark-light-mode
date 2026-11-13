@@ -228,7 +228,7 @@ cd ../meu-app
 Execute:
 
 ```bash
-npm install ../react-simple-theme-switcher/react-simple-theme-switcher-1.0.0.tgz
+npm install ../switcher-dark-light-mode/react-simple-theme-switcher/react-simple-theme-switcher-1.0.0.tgz
 ```
 
 Entendendo o caminho:
@@ -287,13 +287,13 @@ npm pack
 **No projeto consumidor:**
 
 ```bash
-npm install ../react-simple-theme-switcher/react-simple-theme-switcher-1.0.0.tgz
+npm install ../switcher-dark-light-mode/react-simple-theme-switcher/react-simple-theme-switcher-1.0.0.tgz
 ```
 
 Se estiver reutilizando o mesmo arquivo e quiser forçar a reinstalação:
 
 ```bash
-npm install --force ../react-simple-theme-switcher/react-simple-theme-switcher-1.0.0.tgz
+npm install --force ../switcher-dark-light-mode/react-simple-theme-switcher/react-simple-theme-switcher-1.0.0.tgz
 ```
 
 Uma alternativa é remover a instalação anterior e instalar novamente.
